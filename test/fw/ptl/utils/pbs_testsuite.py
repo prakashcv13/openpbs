@@ -460,7 +460,7 @@ class PBSTestSuite(unittest.TestCase):
         cls.init_comms()
         a = {ATTR_license_min: len(cls.moms)}
         cls.server.manager(MGR_CMD_SET, SERVER, a, sudo=True)
-        cls.server.restart()
+        #cls.server.restart()
         cls.log_end_setup(True)
         # methods for skipping tests with ptl decorators
         cls.populate_test_dict()
